@@ -1,3 +1,45 @@
+xft (2.3.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Subpixel LCD text rendering improvements (Closes: #641197).
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 16 Jun 2012 22:04:44 +0200
+
+xft (2.2.0-3) unstable; urgency=low
+
+  * Team upload.
+
+  [ Steve Langasek ]
+  * Build for multiarch.
+
+  [ Julien Cristau ]
+  * Add build-indep and build-arch d/rules targets.
+  * Bump Standards-Version to 3.9.2.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 12 Jun 2011 16:30:44 +0200
+
+xft (2.2.0-2) unstable; urgency=low
+
+  * Remove Andres Salomon and David Nusinow from Uploaders.  Thanks for your
+    work!
+  * Parse DEB_BUILD_OPTIONS with $(filter ..), not $(findstring ..).
+  * Drop obsolete Conflicts on libxft2-dev and xlibs-dev.
+  * Bump Standards-Version to 3.9.1.
+  * Upload to unstable.
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 10 Feb 2011 20:04:14 +0100
+
+xft (2.2.0-1) experimental; urgency=low
+
+  * New upstream release:
+    - Remove obsolete xft-config script.
+  * Adapt libxft-dev.install accordingly.
+  * Remove RCS tag in debian/copyright.
+  * Bump xutils-dev build-dep for new macros.
+  * Drop 001_no_export_freetype.diff, merged upstream.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Jan 2011 05:09:29 +0100
+
 xft (2.1.14-2) unstable; urgency=low
 
   [ Julien Cristau ]

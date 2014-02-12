@@ -1,1 +1,1 @@
-usr/lib/libXft.so.*
+usr/lib/*/libXft.so.* usr/lib

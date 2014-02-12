@@ -2,9 +2,9 @@ Source: xft
 Section: devel
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: David Nusinow <dnusinow@debian.org>, Andres Salomon <dilinger@debian.org>, Cyril Brulebois <kibi@debian.org>
+Uploaders: Cyril Brulebois <kibi@debian.org>
 Build-Depends:
- debhelper (>= 5.0.0),
+ debhelper (>= 8.1.3),
  libfontconfig1-dev,
  libfreetype6-dev,
  libx11-dev (>= 2:1.3.3-2),
@@ -13,8 +13,8 @@ Build-Depends:
  quilt,
  automake,
  libtool,
- xutils-dev (>= 1:7.5~1)
-Standards-Version: 3.8.4
+ xutils-dev (>= 1:7.5+4),
+Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/xft
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/xft.git
 
@@ -24,6 +24,8 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Description: FreeType-based font drawing library for X
  Xft provides a client-side font API for X applications, making the FreeType
  font rasterizer available to X clients.  Fontconfig is used for font
@@ -47,6 +49,7 @@ Depends:
  libxft2 (= ${binary:Version}),
  ${shlibs:Depends},
  ${misc:Depends},
+Multi-Arch: same
 Description: FreeType-based font drawing library for X (unstripped)
  Xft provides a client-side font API for X applications, making the FreeType
  font rasterizer available to X clients.  Fontconfig is used for font
@@ -74,7 +77,6 @@ Depends:
  libxrender-dev,
  zlib1g-dev | libz-dev,
  ${misc:Depends},
-Conflicts: libxft2-dev, xlibs-dev (<< 4.3.0)
 Provides: libxft2-dev
 Description: FreeType-based font drawing library for X (development files)
  Xft provides a client-side font API for X applications, making the FreeType
