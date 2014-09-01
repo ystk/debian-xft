@@ -1,3 +1,16 @@
+xft (2.3.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Rewrite debian/rules using dh, bump compat level to 9, drop xsfbs.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 13 Jul 2014 10:49:43 +0200
+
+xft (2.3.1-2) unstable; urgency=medium
+
+  * Fix FTBFS with freetype 2.5.1 (closes: #733385).
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 18 Jan 2014 20:14:05 +0100
+
 xft (2.3.1-1) unstable; urgency=low
 
   * New upstream release:
